@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Eloy Galdon">
+	<meta name="description" content="Ejercicio aplicacion fullPage">
+	<link rel="shortcut icon" href="assets/images/icon.png">
+	<title>Ejercicio fullPage</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section z1">
+		<h1>Zona 1</h1></div>
+	<div class="section z2">
+		<div class="slide"> <img src="assets/images/zona2.jpg"> </div>
+		<div class="slide"> <img src="assets/images/zona22.jpg"> </div>
+		<div class="slide"> <img src="assets/images/zona23.jpg"> </div>
+	</div>
+	<div class="section z3"><h1>Zona 3<h1></div>
+</div>
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>
+<script>
+	$(document).ready(function() {
+	$('#fullpage').fullpage({
+
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Zona1', 'Zona2','Zona3'],
+        showActiveTooltip: false,
+	});
+});
+</script>
+</body>
+</html>
